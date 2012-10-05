@@ -1,0 +1,56 @@
+.ui-page {
+	background-attachment: fixed;
+	background-image: url(images/Wall3x.jpg);
+	background-position: center center;
+}
+.ui-text {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: #999999;
+}
+.marco {
+	background-color: #000;
+	height: auto;
+	border: thin solid #FC3;
+	text-align: center;
+	margin: 0px;
+	color: #FFF;
+}
+.marco2 {
+	background-color: #F93;
+	margin: 0px;
+	height: auto;
+	border: thin solid #00C;
+	text-align: center;
+	margin: 0px;
+}
+#map-page {
+	width: 100%;
+	height: 100%;
+	padding: 50;
+}
+#map-canvas {
+	width: 100%;
+	height: 90%;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 5px;
+}
+.message {
+	background: #5F9CC5;
+	padding: 5px 5px 5px 20px;
+	border-top: 3px solid #396B9E;
+	border-bottom: 3px solid #396B9E;
+	text-shadow: none;
+	color: #FFFFFF;
+	display: none;
+}
+
+.costa-text {
+	font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+	color: #333;
+	font-size: 13px;
+}

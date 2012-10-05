@@ -1,0 +1,1513 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guia Tranportes Interprovinciales</title>
+<link href="jquery.mobile-1.1.0.min.css" rel="stylesheet" type="text/css">
+<link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="themes/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="maps6.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" src="jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="cordova-2.0.0.js"></script>
+</head>
+
+<body>
+<!----- PAGINA 1 ------> 
+
+<!----- Page Central ------>
+
+<div data-role="page" data-theme="a" id="home">
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"> <em><span class="ui-text">GUIA TRANSPORTE</span></em></div>
+      <div class="ui-block-b"> </div>
+      <div style="text-align:center">
+        <div class="ui-block-c" id="logeo"> <a id="btn-login" href="#login" data-transition="fade"> <img src="images/login.png"> </a> </div>
+      </div>
+      <div style="text-align:right">
+        <div class="ui-block-d"> <a href="#busqueda" data-transition="fade"> <img src="images/buscaup.png"> </a></div>
+        <div class="ui-block-e"> <a href="#formulario1" data-transition="fade"> <img src="images/registrar.png"> </a></div>
+      </div>
+    </div>
+  </div>
+  <div data-role="content"> 
+    
+    <!-- cracion de TABLAS HOME -----> 
+    
+    <br>
+    <div class="ui-grid-a" align="center">
+      <div class="ui-block-a"> <a href="#map-page" data-transition="slidedown"> <img src="images/Geo.png"> </a></div>
+      <div class="ui-block-b"> <a href="#login" id="btn-reservaciones" data-transition="fade"> <img src="images/Reservaciones.png"> </a></div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="ui-block-a"> <a href="#busqueda" data-transition="slidedown"> <img src="images/Guia.png"> </a></div>
+      <div class="ui-block-b"> <a href="#contacto" data-transition="fade"> <img src="images/Contactenos.png"> </a></div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h1> jorgeluix.wordpress.com </h1>
+  </div>
+</div>
+
+<!--- CONTACTO ------>
+
+<div data-role="page" data-theme="a" id="contacto">
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"> <span class="ui-text">GUIA TRANSPORTE</span></div>
+      <div class="ui-block-b"> </div>
+      <div style="text-align:center">
+        <div class="ui-block-c"> <a href="#home" data-transition="fade"> <img src="images/home.png"> </a></div>
+      </div>
+      <div style="text-align:right">
+        <div class="ui-block-d"> <a href="#busqueda" data-transition="fade"> <img src="images/buscaup.png"> </a></div>
+        <div class="ui-block-e"> <a href="#formulario1" data-transition="fade"> <img src="images/registrar.png"> </a></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- creacion de columnas ----->
+  
+  <div data-role="content">
+    <div style="text-align:center"> <img src="images/Contactox.jpg" width="305" align="baseline" data-inset="true"></div>
+    <h2 align="center"> Contáctenos </h2>
+    <ul data-role="listview" data-dividertheme="e" data-inset="true">
+      <li data-theme="b"> OPCIONES </li>
+      <li> <a href="#telf"> Teléfono </a> <a href="#telf1"> Precio </a> </li>
+      <li> <a href="#dir"> Direccion</a> <a href="#dir1"> Precio </a> </li>
+      <li> <a href="#email"> e-mail</a> <a href="#email1"> Precio </a> </li>
+    </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="a">
+    <h1> jorgeluix.wordpress.com </h1>
+  </div>
+</div>
+
+<!----- GOOGLE MAPS ------>
+
+<div data-role="page"  id="map-page"  data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
+    <h1>Geolocalización</h1>
+  </div>
+  <div data-role="content" id="map-canvas">
+    <h3 align="center" >Conectando</h3>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="a">
+    <h4>jorgeluix.wordpress.com/</h4>
+  </div>
+</div>
+
+<!----- CONTACTENOS 1a ------>
+
+<div data-role="page" data-theme="a" id="telf">
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"> <span class="ui-text">GUIA TRANSPORTE</span></div>
+      <div class="ui-block-b"> </div>
+      <div style="text-align:center">
+        <div class="ui-block-c"> <a href="#home" data-transition="fade"> <img src="images/home.png"> </a></div>
+      </div>
+      <div style="text-align:right">
+        <div class="ui-block-d"> <a href="#busqueda" data-transition="fade"> <img src="images/buscaup.png"> </a></div>
+        <div class="ui-block-e"> <a href="#formulario1" data-transition="fade"> <img src="images/registrar.png"> </a></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- creacion de columnas ----->
+  
+  <div data-role="content">
+    <h2 align="center"> Telefonos </h2>
+    <p align="center"> (593)(4)-2130166 - 2130167 </p>
+    <p align="center"> (593)(4)-2332239 </p>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="a">
+    <h1> jorgeluix.wordpress.com </h1>
+  </div>
+</div>
+
+<!----- CONTACTENOS 1b ------>
+
+<div data-role="page" data-theme="a" id="dir">
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"> <span class="ui-text">GUIA TRANSPORTE</span></div>
+      <div class="ui-block-b"> </div>
+      <div style="text-align:center">
+        <div class="ui-block-c"> <a href="#home" data-transition="fade"> <img src="images/home.png"> </a></div>
+      </div>
+      <div style="text-align:right">
+        <div class="ui-block-d"> <a href="#busqueda" data-transition="fade"> <img src="images/buscaup.png"> </a></div>
+        <div class="ui-block-e"> <a href="#formulario1" data-transition="fade"> <img src="images/registrar.png"> </a></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- creacion de columnas ----->
+  
+  <div data-role="content">
+    <h2 align="center"> Telefonos </h2>
+    <p align="center"> (Av. Benjamín Rosales A. </p>
+    <p align="center"> y Av. de las Américas s/n) </p>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="a">
+    <h1> jorgeluix.wordpress.com </h1>
+  </div>
+</div>
+
+<!----- CONTACTENOS 1c ------>
+
+<div data-role="page" data-theme="a" id="email">
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"> <span class="ui-text">GUIA TRANSPORTE</span></div>
+      <div class="ui-block-b"> </div>
+      <div style="text-align:center">
+        <div class="ui-block-c"> <a href="#home" data-transition="fade"> <img src="images/home.png"> </a></div>
+      </div>
+      <div style="text-align:right">
+        <div class="ui-block-d"> <a href="#busqueda" data-transition="fade"> <img src="images/buscaup.png"> </a></div>
+        <div class="ui-block-e"> <a href="#formulario1" data-transition="fade"> <img src="images/registrar.png"> </a></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- creacion de columnas ----->
+  
+  <div data-role="content">
+    <h2 align="center"> E-mail</h2>
+    <p align="center"> pcgeoge@hotmail.com </p>
+    <p align="center"> jorgeluisvz@gmail.com </p>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="a">
+    <h1> jorgeluix.wordpress.com </h1>
+  </div>
+</div>
+
+<!----- FORMULARIO 1 ----->
+
+<div data-role="page" data-theme="a" id="formulario1">
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"> <span class="ui-text">GUIA TRANSPORTE</span></div>
+      <div class="ui-block-b"> </div>
+      <div style="text-align:center">
+        <div class="ui-block-c"> <a href="#home" data-transition="fade"> <img src="images/home.png"> </a></div>
+      </div>
+      <div style="text-align:right">
+        <div class="ui-block-d"> <a href="#busqueda" data-transition="fade"> <img src="images/buscaup.png"> </a></div>
+        <div class="ui-block-e"> <a href="#formulario1" data-transition="fade"> <img src="images/registrar.png"> </a></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- cracion de columnas ----->
+  
+  <div data-role="content">
+    <form id="form-contacto1">
+        <div data-role="fieldcontain">
+          <label for="textinput">Nombres:</label>
+          <input type="text" name="textinput" id="textinput" required placeholder="Ingrese su nombre completo" data-mini="true">
+        </div>
+        <div data-role="fieldcontain">
+          <label for="textinput2">Usuario:</label>
+          <input type="text" name="textinput2" id="textinput2" required placeholder="Ingrese usuario" data-mini="true">
+        </div>
+        <div data-role="fieldcontain">
+          <label for="textinput3">Email:</label>
+          <input type="text" name="textinput3" id="textinput3" placeholder="Ingrese su email" data-mini="true">
+        </div>
+        <div data-role="fieldcontain">
+          <label for="passwordinput">Contraseña:</label>
+          <input type="password" name="passwordinput" id="passwordinput" required placeholder="Ingrese Contraseña" data-mini="true">
+        </div>
+        <div data-role="fieldcontain">
+          <label for="passwordinput2">Confirmar Contraseña:</label>
+          <input type="password" name="passwordinput2" id="passwordinput2" required placeholder="Vuelva a ingresar la Contraseña" data-mini="true">
+        </div>
+        <div data-role="fieldcontain" align="center">
+          <input type="submit" value="Siguiente" data-theme="c">
+        </div>
+    </form>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h3> jorgeluix.wordpress.com </h3>
+  </div>
+</div>
+
+<!----- FORMULARIO 2 ----->
+
+<div data-role="page" data-theme="a" id="formulario2">
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"> <span class="ui-text">GUIA TRANSPORTE</span></div>
+      <div class="ui-block-b"> </div>
+      <div style="text-align:center">
+        <div class="ui-block-c"> <a href="#home" data-transition="fade"> <img src="images/home.png"> </a></div>
+      </div>
+      <div style="text-align:right">
+        <div class="ui-block-d"> <a href="#busqueda" data-transition="fade"> <img src="images/buscaup.png"> </a></div>
+        <div class="ui-block-e"> <a href="#formulario1" data-transition="fade"> <img src="images/registrar.png"> </a></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- cracion de columnas ----->
+  
+  <div data-role="content">
+    <form id="form-contacto2">
+        <div data-role="fieldcontain">
+          <label for="textinput4">Nombre y Apellido:</label>
+          <input type="text" name="textinput4" id="textinput4" required placeholder="Deben Coincidir con la tarjeta" >
+        </div>
+        <div data-role="fieldcontain">
+          <label for="textinput5">Numero de tarjeta:</label>
+          <input type="number" name="textinput5" id="textinput5" required placeholder="Solo Visa, MasterCard y A. Express" >
+        </div>
+        <div data-role="fieldcontain">
+          <label for="textinput6">CCV / CCV2:</label>
+          <input type="number" name="textinput6" id="textinput6" required placeholder="Código de Seguridad" >
+        </div>
+        <div data-role="fieldcontain">
+          <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>Vence:</legend>
+            <label for="select-mes">Month</label>
+            <select name="select-mes" id="select-mes" data-native-menu="false">
+              <option>Mes</option>
+              <option value="ene">Enero (1)</option>
+              <option value="feb">Febrero (2)</option>
+              <option value="mar">Marzo (3)</option>
+              <option value="abr">Abril (4)</option>
+              <option value="may">Mayo (5)</option>
+              <option value="jun">Junio (6)</option>
+              <option value="jul">Julio (7)</option>
+              <option value="ago">Agosto (8)</option>
+              <option value="sep">Septiembre (9)</option>
+              <option value="oct">Octubre (10)</option>
+              <option value="nov">Noviembre (11)</option>
+              <option value="dic">Diciembre (12)</option>
+            </select>
+            <label for="select-ano">Year</label>
+            <select name="select-ano" id="select-ano" data-native-menu="false">
+              <option>Año</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+            </select>
+          </fieldset>
+        </div>
+    	<div data-role="fieldcontain" align="center">
+        <input id="textinput_f2" name="textinput_f2" type="hidden" value="">
+        <input id="textinput2_f2" name="textinput2_f2" type="hidden" value="">
+        <input id="textinput3_f2" name="textinput3_f2" type="hidden" value="">
+        <input id="passwordinput_f2" name="passwordinput_f2" type="hidden" value="">
+        
+          <input type="submit" value="Acepto" data-theme="c">
+        </div>
+    </form>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h3> wwww.georgexluix.com </h3>
+  </div>
+</div>
+
+<!----- FORMULARIO 3 ----->
+
+<div data-role="page" id="formulario3">
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <h2 align="center"> R. Completado </h2>
+  </div>
+  <div data-role="content" data-theme="c">
+    <h3 align="center"> Usuario Registrado </h3>
+    <a href="#home" data-role="button"  data-direction="reverse"> Volver al Inicio </a> </div>
+  <div data-role="footer" data-theme="a">
+    <h4> wwww.georgexluix.com </h4>
+  </div>
+</div>
+
+
+<!----- LOGIN ----->
+<div data-role="page" data-theme="a" data-position="fixed" id="login">
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"> <span class="ui-text">GUIA TRANSPORTE</span></div>
+      <div class="ui-block-b"> </div>
+      <div style="text-align:center">
+        <div class="ui-block-c"> <a href="#home" data-transition="fade"> <img src="images/home.png"> </a></div>
+      </div>
+      <div style="text-align:right">
+        <div class="ui-block-d"> <a href="#busqueda" data-transition="fade"> <img src="images/buscaup.png"> </a></div>
+        <div class="ui-block-e"> <a href="#formulario1" data-transition="fade"> <img src="images/registrar.png"> </a></div>
+      </div>
+    </div>
+  </div>
+  <div data-role="content"> <br>
+    <center>
+      <img src="images/key.png">
+    </center>
+    </a>
+    <div class="message"></div>
+    <form id="form1">
+      <div data-role="fieldcontain">
+          <label for="Usuario">Usuario:</label>
+          <input type="text" name="Usuario" id="Usuario" required>
+      </div>
+      <div data-role="fieldcontain">
+          <label for="Password">Contrase&ntilde;a:</label>
+          <input type="password" name="Password" id="Password" required>
+      </div>
+      <div data-role="fieldcontain" align="center">
+        <input type="submit" value="Consultar" data-theme="c">
+      </div>
+    </form>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h1> jorgeluix.wordpress.com </h1>
+  </div>
+</div>
+
+
+
+<!------------ 	           COOPERATIVAS     ----------------------------->
+
+<div data-role="page" data-theme="a" id="reserva">
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"> <span class="ui-text">GUIA TRANSPORTE</span></div>
+      <div class="ui-block-b"> </div>
+      <div style="text-align:center">
+        <div class="ui-block-c"> <a href="#" id="btn-reserva"> <img src="images/home.png"> </a></div>
+      </div>
+      <div style="text-align:right">
+        <div class="ui-block-d"> <a href="#busqueda" data-transition="fade"> <img src="images/buscaup.png"> </a></div>
+        <div class="ui-block-e"> <a href="#formulario1" data-transition="fade"> <img src="images/registrar.png"> </a></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- cracion de columnas -----> 
+  
+  <br>
+  <div data-role="content"> 
+    <script language="JavaScript">
+
+
+var num_of_cats = 64; // This is the number of categories, including the first, blank, category.
+var open_in_newwindow=1; //Set 1 to open links in new window, 0 for no.
+var option_array = new Array(num_of_cats);
+
+option_array[0] = new Array("You need to select a category"); // This is the first (blank) category. Don't mess with it.
+
+option_array[1] = new Array("-- Seleccionar --",
+"ALAUSÍ");
+
+option_array[2] = new Array("-- Seleccionar --",
+"CHIMBORAZO",
+"C.I.T.A. EXPRESS",
+"FLOTA PELILEO",
+"TRASANDINA EXPRESS");
+
+option_array[3] = new Array("-- Seleccionar --",
+"TRANS ESMERALDAS TEISA S.A.");
+
+option_array[4] = new Array("-- Seleccionar --",
+"F.B.I. FLOTA BABAHOYO");
+
+option_array[5] = new Array("-- Seleccionar --",
+"COACTUR",
+"REINA DEL CAMINO");
+
+option_array[6] = new Array("-- Seleccionar --",
+"RUTAS BALZAREÑAS");
+
+option_array[7] = new Array("-- Seleccionar --",
+"REINA DEL CAMINO");
+
+option_array[8] = new Array("-- Seleccionar --",
+"REINA DEL CAMINO");
+
+option_array[9] = new Array("-- Seleccionar --",
+"CARLOS ALBERTO ARAY",
+"REINA DEL CAMINO");
+
+option_array[10] = new Array("-- Seleccionar --",
+"BAÑOS",
+"ZARACAY");
+
+option_array[11] = new Array("-- Seleccionar --",
+"EJECUTIVO SAN LUIS",
+"TURISMO ORIENTAL",
+"SUPER SEMERIA");
+
+option_array[12] = new Array("-- Seleccionar --",
+"SEÑOR DE LOS MILAGROS",
+"SANTA MARTHA");
+
+option_array[13] = new Array("-- Seleccionar --",
+"RUTAS EMPALMEÑAS");
+
+option_array[14] = new Array("-- Seleccionar --",
+"NAMBIJA");
+
+option_array[15] = new Array("-- Seleccionar --",
+"OCCIDENTALES",
+"PANAMERICANA INTERNACIONAL",
+"TRANS ESMERALDAS TEISA");
+
+option_array[16] = new Array("-- Seleccionar --",
+"PUTUMAYO");
+
+option_array[17] = new Array("-- Seleccionar --",
+"KENNEDY");
+
+option_array[18] = new Array("-- Seleccionar --",
+"CALUMA",
+"EXPRESS ATENAS",
+"FLOTA BOLIVAR 2",
+"SAN PEDRITO");
+
+option_array[19] = new Array("-- Seleccionar --",
+"C.I.F.A.",
+"ECUATORIANO PULLMAN",
+"RUTAS ORENSES");
+
+option_array[20] = new Array("-- Seleccionar --",
+"JIPIJAPA");
+
+option_array[21] = new Array("-- Seleccionar --",
+"SALITRE",
+"RUTAS VINCEÑAS");
+
+option_array[22] = new Array("-- Seleccionar --",
+"RIRCAY",
+"LA TRONCALEÑA");
+
+option_array[23] = new Array("-- Seleccionar --",
+"RUTAS VINCEÑAS");
+
+option_array[24] = new Array("-- Seleccionar --",
+"LOJA",
+"OCCIDENTALES");
+
+option_array[25] = new Array("-- Seleccionar --",
+"SANTA");
+
+option_array[26] = new Array("-- Seleccionar --",
+"SEÑOR DE LOS MILAGROS");
+
+option_array[27] = new Array("-- Seleccionar --",
+"LOJA",
+"PANAMERICANA INTERNACIONAL");
+
+option_array[28] = new Array("-- Seleccionar --",
+"LOJAS");
+
+option_array[29] = new Array("-- Seleccionar --",
+"MACAS LIMITADA",
+"RIOBAMBA");
+
+option_array[30] = new Array("-- Seleccionar --",
+"C.I.F.A.",
+"ECUATORIANO PULLMAN",
+"RUTAS ORENSES");
+
+
+option_array[31] = new Array("-- Seleccionar --",
+"CARLOS ALBERTO ARAY.",
+"COACTUR",
+"RUTAS PORTOVEJENSES",
+"REINA DEL CAMINO");
+
+option_array[32] = new Array("-- Seleccionar --",
+"EJECUTIVO EXPRESS",
+"MARCELINO MARIDUEÑA",
+"RUTAS MILAGREÑAS");
+
+option_array[33] = new Array("-- Seleccionar --",
+"FLOR DE LOS RÍOS",
+"VALENCIA");
+
+option_array[34] = new Array("-- Seleccionar --",
+"S.A.N.  NAR");
+
+option_array[35] = new Array("-- Seleccionar --",
+"LIBERTAD PENINSULAR");
+
+option_array[36] = new Array("-- Seleccionar --",
+"F.I.F.A.");
+
+option_array[37] = new Array("-- Seleccionar --",
+"ECUATORIANO PULLMAN",
+"RUTAS ORENSES");
+
+option_array[38] = new Array("-- Seleccionar --",
+"COACTUR",
+"ZARACAY");
+
+option_array[39] = new Array("-- Seleccionar --",
+"SUCRE");
+
+option_array[40] = new Array("-- Seleccionar --",
+"VILLAMIL C.T.V.");
+
+option_array[41] = new Array("-- Seleccionar --",
+"COACTUR",
+"RUTAS PORTOVEJENSES",
+"REINA DEL CAMINO");
+
+option_array[42] = new Array("-- Seleccionar --",
+"POSORJA C.T.P.");
+
+option_array[43] = new Array("-- Seleccionar --",
+"TOURIS SAN FRANCISCO ORIENTAL");
+
+option_array[44] = new Array("-- Seleccionar --",
+"LA MANÁ",
+"VALENCIA",
+"T.I.A. S.A.",
+"SUCRE");
+
+option_array[45] = new Array("-- Seleccionar --",
+"KENNEDY",
+"OCCIDENTALES");
+
+
+option_array[46] = new Array("-- Seleccionar --",
+"FLOTA IMBABURA",
+"PANAMERICANA INTERNACIONAL",
+"ZARACAY",
+"TRANSPORTES ECUADOR",
+"SANTA",
+"SAN CRISTOBAL");
+
+
+option_array[47] = new Array("-- Seleccionar --",
+"ECUADOR EJECUTIVO",
+"RIOBAMBA");
+
+option_array[48] = new Array("-- Seleccionar --",
+"LIBERPESA S.A.",
+"COSTA AZUL C.I.C.A.",
+"LIBERTAD PENINSULAR");
+
+option_array[49] = new Array("-- Seleccionar --",
+"SALITRE",
+"RUTAS VINCEÑAS");
+
+
+option_array[50] = new Array("-- Seleccionar --",
+"SANTA ANA C.I.S.A");
+
+option_array[51] = new Array("-- Seleccionar --",
+"AEROTAXI",
+"OCCIDENTALES",
+"TRANS ESMERALDAS TEISA S.A.");
+
+
+option_array[52] = new Array("-- Seleccionar --",
+"RÍO PAUTE",
+"REINA DEL CAMINO");
+
+option_array[53] = new Array("-- Seleccionar --",
+"C.I.F.A.",
+"RUTAS ORENSES");
+
+
+option_array[54] = new Array("-- Seleccionar --",
+"KENNEDY",
+"LA MANÁ",
+"ZARACAY",
+"SUCRE");
+
+option_array[55] = new Array("-- Seleccionar --",
+"BAÑOS",
+"LOJA");
+
+option_array[56] = new Array("-- Seleccionar --",
+"BAÑOS",
+"FLOTA PELILEO");
+
+option_array[57] = new Array("-- Seleccionar --",
+"REINA DEL CAMINO");
+
+option_array[58] = new Array("-- Seleccionar --",
+"SAN CRISTOBAL");
+
+option_array[59] = new Array("-- Seleccionar --",
+"VENTANAS");
+
+option_array[60] = new Array("-- Seleccionar --",
+"RUTAS VINCEÑAS");
+
+option_array[61] = new Array("-- Seleccionar --",
+"F.I.F.A.",
+"SALITRE",
+"RUTAS VINCEÑAS");
+
+option_array[62] = new Array("-- Seleccionar --",
+"LOJA");
+
+option_array[63] = new Array("-- Seleccionar --",
+"CIUDAD DE PIÑAS",
+"T.A.C.");
+
+
+
+
+
+
+var text_array = new Array(num_of_cats);
+
+text_array[0] = new Array("Debe de Elegir primero la ciudad a la cual desea viajar para poder ver y elegir la cooperativa deseada en cual desea consultar horarios, precios y cooperativa en la que desea viajar."); // These are general instructions. Change them if you want, or keep them if you don't.
+
+text_array[1] = new Array("", // Note that the first entry here is a general description of this category. After than, they're descriptions of each link. Make sure that you don't put the first link first; the general description must be first.
+"ALAUSÍ                                              Mañana	Tarde	Noche                           6:15,9:30 13:00,16:00,17:00	                           Tarifa: $ 5                                                    Telf.: 03-2-930-0 | 03-2-930-2|",
+
+"Wired magazine is the type of magazine which needs no introduction.");
+
+text_array[2] = new Array("",
+"CHIMBORAZO    												 Mañana	Tarde	Noche					5:30,7:30,11:00	12:00,16:00,17:30						Tarifa: $ 5						Telf.: 03-2-96008 | 2-140-644 |",
+
+"C.I.T.A. EXPRESS											Mañana	Tarde	Noche					0:15,0:45,6:15,7:45,9:15,11:15	13:15,16:15,18:15	19:15,20:45,21:45,23:15,23:45					Tarifa: $ 5						Telf.: 03-2-423-6 | 2-140-668 |",
+
+"FLOTA PELILEO                                               Mañana	Tarde   Noche   9:45,1:45,4:45,7:15,8:45,10:45	12:45,13:45,14:45,15:45,17:45    21:15,22:45             			 				                Tarifa: $ 5      				       			Telf.: 03-2-849-5 | 2-140-189 |",
+
+"TRASANDINA EXPRESS											Mañana	Tarde	Noche							1:15, 2:15, 3:15, 4:15, 5:15, 5:45, 6:45, 8:15, 10:15, 11:45	12:15, 14:15, 15:15, 16:45, 17:15	18:45, 19:45, 20:15, 22:15					Tarifa: $ 5						Telf.: 03-2-520-8 | 2-581-785 |");
+
+text_array[3] = new Array("",
+"TRANS ESMERALDAS TEISA 										Mañana		Noche										9:10			21:00				 Tarifa: $ 7.10						Telf.: 04-2-279-5 | 2-636-945");
+
+text_array[4] = new Array("",
+"F.B.I. FLOTA BABAHOYO											Mañana	 Tarde	Noche	5:00,5:35,6:00,6:05,6:10,6:15,6:35,6:45,7:00,7:35,7:40,7:45,7:50,7:55,8:00,8:10,8:30,8:40,8:50,9:00,10:45,12:00,12:20,13:05,13:40,14:55,16:40,16:45,17:05,18:40,19:00,19:20,19:30,19:40,20:00,20:50,21:00,21:10,21:20,22:00,22:15,22:40,23:00	 		Tarifa: $ 1.4 						Telf.: 2-140-595");
+
+
+text_array[5] = new Array("",
+"COACTUR														Mañana	 Tarde	Noche			4:25,5:45,7:40,8:40,11:10	13:25,14:40,16:35,17:40	19:35													Tarifa: $ 2.91									   Telf.: 05-2-934-2 | 2-140-078 |",
+
+"REINA DEL CAMINO												Mañana	  Tarde  	Noche						3:50, 5:55, 8:00, 11:25	12:00, 12:50, 14:25, 15:20, 16:30, 16:45,  19:00, 21:00, 23:00					 		                 Tarifa: $ 3.10							Telf.: 05-269-640 | 2-140-757 |");
+
+text_array[6] = new Array("",
+"RUTAS BALZAREÑAS											Mañana	   Tarde  	Noche					  6:00, 6:15, 6:30, 6:45, 7:00, 7:30, 7:45, 12:30, 12:45, 15:00, 15:30, 15:45, 16:00, 16:15, 18:30, 19:00, 19:15, 19:30, 19:45, 															 Tarifa: $ 2.25												Telf.: 04-2-279-5 | 2-636-945");
+
+
+text_array[7] = new Array("",
+"REINA DEL CAMINO											Tarde	Noche: 								2:40; 	  11:45										Tarifa: $ 5 							Telf.: 05-269-640 | 2-140-757 | ");
+
+text_array[8] = new Array("",
+"REINA DEL CAMINO									Mañana	  Tarde	Noche	4:00,4:20,4:50,5:00,5:10,5:50,6:00,6:10,6:20,7:00,7:10,7:20,8:00,8:30,8:50,9:10,9:30,11:20,11:30,11:40, 12:00,12:10,13:40,13:50,14:40,14:50,15:40,15:50,16:20,16:40,17:30,17:40,17:50,18:20,18:30,18:40,18:50,19:00Tarifa: $ 2.9											Telf.: 03-2-974-8 | 2-140-639 | ");
+
+
+text_array[9] = new Array("",
+"CARLOS ALBERTO ARAY								Mañana	 Tarde	Noche 	5:35,6:10,6:30,7:20,8:35,9:25,10:10,11:05,11:50,12:40,13:40,14:15,14:55,15:15,16:10,17:15,18:15, 19:10 			 				Tarifa: $ 4.65								Telf.: 05-269-581 | 2-140-658 | ",
+
+"REINA DEL CAMINO									Mañana	Tarde	Noche								0:00, 2:00, 8:50, 13:30, 15:50, 17:35	18:25; 21:45													Tarifa: $ 4.15								Telf.: 05-269-640 | 05-2-696-4");
+
+
+text_array[10] = new Array("",
+"BAÑOS (Vía Pallatanga)											 Noche:	19:30										 					Tarifa: $ 8 		  				Telf.:  02-2-752-5 ",
+
+"ZARACAY  														 Tarde:	  12:40	 					      		  Tarifa: $ 9  								Telf.: 02-2-752-5 | 2-140-089");
+
+
+text_array[11] = new Array("",
+"EJECUTIVO SAN LUIS  (Cañar)						Mañana	Tarde	Noche 0:01,2:00,3:00,3:45,4:30,5:00,5:30,6:00,6:30,7:00,7:30,8:00,8:30,8:55,9:20,10:10,11:00,11:25,12:15,12:40,13:05,13:30,13:55,14:20,14:45,15:10,15:40,16:10,16:50,17:30,18:10	19:00,20:30,22:00 							 				Tarifa: $ 5.50							Telf.: 07-2-823-2 | 2-140-310  ",
+
+"TURISMO ORIENTAL (MOLLETURO)						Mañana	Tarde	Noche 								1:00, 2:00, 3:00, 4:00, 5:00, 5:40, 6:20, 7:00,8:10, 8:45, 9:20, 9:55, 10:30, 11:05, 11:40	12:15, 12:50, 13:25, 14:00, 14:35, 15:10, 15:45, 16:20, 17:00, 17:40	18:20, 19:00, 20:00, 21:00, 22:00, 23:00, 23:59   			 					Tarifa: $ 4.7 						 Telf.: 07-2-802-6 | 2-140-015",
+
+
+"SUPER SEMERIA  (CAÑAR)								Mañana	Tarde	Noche								0:01, 2:00, 3:00, 3:45, 4:30, 5:00, 5:30, 6:00, 6:30, 7:00, 7:30, 8:00, 8:30, 8:55, 9:20,10:10, 10:35, 11:00, 11:25, 11:50	1 14:45, 15:40, 16:10, 17:30, 18:10, 19:00, 20:30, 22:00							   	 					Tarifa: $ 4.9 							Telf.: 07-2-842-0 | 07-2-842-0");
+
+
+
+text_array[12] = new Array("",
+"SEÑOR DE LOS MILAGROS								Mañana	Tarde	Noche 0:01,2:00,3:00,3:45,4:30,5:00,5:30,6:00,6:30,7:00,7:30,8:00,8:30,8:55,9:20,10:10,11:00,11:25,12:15,12:40,13:30,13:55,14:20,14:45,15:10,15:40,16:10,17:30,18:10	19:00,22:30,23:00 							 						 					Tarifa: $ 1.05							Telf.: 2-795-232 | 2-140-863 |",
+
+"SANTA MARTHA 										Mañana	Tarde	Noche  								 6:40, 7:00, 7:25, 7:50, 8:15, 8:50, 9:15, 9:50, 10:15, 10:50, 11:15, 11:50	12:15, 12:50, 13:15, 13:50, 14:15, 14:50, 15:15, 15:50, 16:15, 16:50, 17:15, 17:50	18:15, 18:50, 19:10, 19:30, 19:50, 20:20  					 					Tarifa: $ 1.05 							Telf.: 2-010-373 | 2-140-858|");
+
+
+text_array[13] = new Array("",
+"RUTAS EMPALMEÑAS								Mañana	Tarde	Noche										6:00, 6:40, 7:20, 8:00, 9:20, 9:40, 10:20, 11:00,11:40, 12:40, 13:20, 13:40, 14:00, 15:00, 16:20, 17:40,18:00, 18:20, 18:40, 19:00, 19:20, 19:40, 20:00 															 					Tarifa: $ 3.45 							Telf.: 04-2-960-7 | 2-140-635 |");
+
+
+text_array[14] = new Array("",
+"NAMBIJA													Noche:    22:30  							    				Tarifa: $ 13 							 Telf.: 07-2-602-5 | 2-140-182");
+
+
+text_array[15] = new Array("",
+"OCCIDENTALES  								Mañana	Tarde	Noche   					4:15,6:00,7:15,8:45,10:00,10:45	12:30,14:15,15:15,17:00	19:00,20:30,21:00,22:00,22:45,23:40 				    				Tarifa: $ 9							Telf.: 07-2-50273 | 2-140-618 ",
+
+"PANAMERICANA INTERNACIONAL   					  			Noche:  22:15 Y 23:15							  					Tarifa: $ 9.50 						Telf.: 02-2-296-1 | 2-140-638 |",
+
+
+"TRANS ESMERALDAS TEISA S.A. 					Mañana	  Tarde	  Noche 									0:30, 0:45, 3:15, 5:15, 7:00, 7:45, 8:30, 9:45, 10:30, 11:30, 11:50	13:15, 14:30, 15:40, 16:30, 17:50	18:40, 20:00, 21:30, 22:10, 22:30, 23:00, 23:15, 23:30, 23:50 												  					Tarifa: $ 9  						Telf.: 04-2-279-5 | 2-140-642 | ");
+
+
+text_array[16] = new Array("",
+"PUTUMAYO													Tarde:    14:30 							    				Tarifa: $ 7.80							 Telf.: 06-2-832-4 | 2-831-047");
+
+
+text_array[17] = new Array("",
+"KENNEDY													Mañana	  Tarde	  Noche 				   8:00,10:00	13:30,18:30							    														  					Tarifa: $ 4.50							 Telf.: 022-763-11 | 072-041-82 ");
+
+text_array[18] = new Array("",
+"CALUMA													Mañana	Tarde	Noche   					3:30,4:30	13:45,16:15,17:30				    														     				Tarifa: $ 3.95						Telf.: 03-2-974-8 | 2-140-639 ",
+
+"EXPRESS ATENAS   					  			Mañana  	Tarde: 												 9:20, 12:15 y 16:00							  																	  					Tarifa: $ 4.00 						Telf.: 91506079 | 2-141-044 |",
+
+"FLOTA BOLIVAR 2   					  							Mañana: 												 5:00,5:30,6:30,7:30,8:30,9:00,10:30,11:30							  																	  					Tarifa: $ 4.50 						Telf.: 2763287 | 94783044 |",
+
+"SAN PEDRITO													Mañana:									8:00, 9:45, 10:00,	12:45																				  					 					Tarifa: $ 4.25  						Telf.: 03-2-980-7 | 2-140-626|");
+
+
+text_array[19] = new Array("",
+"C.I.F.A.												Mañana	 Tarde	Noche   					4:45,8:25,11:25	15:25	19:45,23:35			    														     				Tarifa: $ 5.50								Telf.: 07-2-933-7 | 2-140-379 |",
+
+
+"ECUATORIANO PULLMAN   					  		  	   Mañana	Tarde	Noche 												 0:05,1:05,2:05,3:05,6:45,7:35,10:05	13:35,16:35	21:15,23:05							  																	  					Tarifa: $ 6.00 									Telf.: 07-2-931-1 | 2-140-617 |",
+
+
+"RUTAS ORENSES													Mañana	Tarde									0:35, 1:35, 2:35																				  					 					Tarifa: $ 5.00  								Telf.: 07-2-937-6 | 2-140-657|");
+
+
+text_array[20] = new Array("",
+"JIPIJAPA													Mañana	  Tarde	  Noche 				   6:40,7:45,8:45,10:45,11:40	12:15,12:45,13:20,13:35,14:10,14:50,15:30,15:45,16:20,17:10,17:20,18:20,18:45	19:05,19:45,20:15,20:50,21:10						    														  					Tarifa: $ 3.45							 		Telf.: 05-2-600-3 | 2-140-540");
+
+
+text_array[21] = new Array("",
+"SALITRE												Mañana	 Tarde	Noche   						6:10, 7:10, 8:10, 9:10, 10:10, 11:10	12:10, 13:10, 14:10, 15:10, 16:10, 17:10	17:10		    														     				Tarifa: $ 4.20									Telf.: 05-2-600-3 | 2-140-540|",
+
+
+"RUTAS VINCEÑAS												Mañana   Tarde	 Noche								5:15, 6:15, 7:15, 8:15, 9:15, 10:15, 11:15	12:15, 13:15, 14:15, 15:15, 16:15, 17:15	18:15, 19:15, 20:15																				  					 	Tarifa: $ 3.50  								Telf.: 05-2-791-1 | 2-140-195 ");
+
+
+text_array[22] = new Array("",
+"RIRCAY												Mañana	 Tarde	Noche   							12:10, 12:20, 12:30, 12:45, 12:55, 13:10, 14:30, 14:45, 14:55, 15:10, 15:20, 15:30, 17:55, 18:10, 18:20, 18:30, 18:45, 18:55, 19:05, 19:1, 19:55, 20:10, 20:30, 20:50		    														     				Tarifa: $ 2.00 						  			 Telf.: 07-2-423-4 | 2-140-519|",
+
+
+"LA TRONCALEÑA											Mañana   Tarde	 Noche								6:05,6:35,7:05,7:35,8:05,8:35,9:05,9:35,10:05,10:35,11:05,11:35, 12:05, 12:35, 13:05,13:35,14:05, 14:35,15:05,15:35,16:05,16:35,17:05,17:35,18:05,18:35																					  					 	Tarifa: $ 1.75 								Telf.: 07-2-420-2 | 2-140-046|");
+
+
+text_array[23] = new Array("",
+"RUTAS VINCEÑAS											Mañana   Tarde	 Noche								5:15, 6:15, 7:15, 8:15, 9:15, 10:15, 11:15	12:15, 13:15, 14:15, 15:15, 16:15, 17:15	18:15, 19:15, 20:15																					  					 	Tarifa: $ 3.25 								Telf.:  05-2-791-1 | 2-140-195 |");
+
+
+text_array[24] = new Array("",
+"LOJA														Mañana	 Tarde: 							     13:00    16:00					    														     				Tarifa: $ 14						Telf.: 07-2-571-8 | 2-140-311 |",
+
+"OCCIDENTALES												 Tarde:											 	13:50																		  					 		     					Tarifa: $ 3.50  							Telf.: 07-2-50273 | 2-140-618 |");
+
+
+text_array[25] = new Array("",
+"SANTA													Mañana   Tarde	 Noche									       10:00																					  					 					Tarifa: $ 6.95									Telf.:  03-2-521-0 | 2-140-507 |");
+
+text_array[26] = new Array("",
+"SEÑOR DE LOS MILAGROS												Mañana   Tarde	 Noche									 6:15, 6:45, 7:00, 7:15, 8:00, 8:45,9:45, 10:00, 11:00,  11:30, 11:45, 12:15, 12:30, 12:45, 13:00, 13:15, 13:30, 13:45, 14:45, 15:00, 15:15, 16:30, 16:45, 17:00, 17:30, 17:45, 18:00																					  					 	Tarifa: $ 4.80							Telf.:  2-795-232 | 2-140-863 |");
+
+
+text_array[27] = new Array("",
+"LOJA												Mañana	 Tarde	Noche   									    9:00, 13:00,  21:00,22:00,22:15,23:00,23:30		    														     				Tarifa: $ 8.80						  			 Telf.: 07-2-571-8 | 2-140-311 |",
+
+
+"PANAMERICANA INTERNACIONAL											 Noche								    	22:30																					  					 					Tarifa: $ 10.00 							Telf.: 02-2-296-1 | 2-140-638 |");
+
+
+text_array[28] = new Array("",
+"LOJA													  Tarde	 Noche									       18:30	19:30																					  					 					Tarifa: $ 7.40									Telf.:  07-2-571-8 | 2-140-311 |");
+
+
+text_array[29] = new Array("",
+"MACAS LIMITADA												 Tarde	Noche   									    14:40,    18:30	20:40	    														     				  		 					Tarifa: $ 10							  Telf.: 072-702-34 | 2-140-413 ",
+
+
+"RIOBAMBA													Tarde	 Noche								    	3:15, 6:30, 9:20	12:15; 15:00	21:20																					  					 		Tarifa: $ 10							Telf.: 03-2-944-5 | 2-140-753 |");
+
+
+text_array[30] = new Array("",
+"C.I.F.A.												 		Mañana	Tarde	Noche  									5:20,5:50,6:20,6:50,7:20,7:50,8:20,8:50,9:20,9:50,10:20,10:50,11:20,11:50,12:50,13:20,13:50,14:20,14:50,15:20,15:50,16:20,16:50,17:20,17:50,18:20,18:50, 19:50,21:00						     				  		 					Tarifa: $ 4.50						  		     Telf.: 07-2-933-7 | 2-140-379 |",
+
+
+"ECUATORIANO PULLMAN											Mañana	Tarde	Noche							 3:30,4:00,5:10,5:40,6:10,7:10,7:40,8:10,9:40,10:10,10:40,11:10,11:40,12:10,13:40,14:10,14:40,15:10,15:40,16:10,16:40,17:10,17:40,18:10,18:40, 19:10,19:40,20:10,21:30																				  					 		Tarifa: $ 5								Telf.: 07-2-931-1 | 2-140-617 |",
+
+
+"RUTAS ORENSES											Mañana	Tarde	Noche							 4:30, 5:00, 6:00, 6:30, 7:00, 7:30, 8:00, 9:00, 9:30, 10:00, 10:30, 11:00, 11:30, 12:30, 13:00, 13:30, 14:00, 15:00, 16:00, 16:30, 17:00, 17:30, 18:30, 19:00, 19:30, 20:00, 20:30, 22:00																			  					 		Tarifa: $ 6								Telf.: 07-2-937-6 | 2-140-657 |");
+
+
+text_array[31] = new Array("",
+"CARLOS ALBERTO ARAY											 		Mañana	Tarde	Noche  									   5:20   9:40	  13:50							     				  		 									     						Tarifa: $ 4.50					  		 Telf.: 05-269-581 | 2-140-658 |",
+
+
+"COACTUR												Mañana	Tarde	Noche							  3:40,4:45,5:30,6:20,7:05,8:15,9:20,9:50,10:40,11:20	12:25,13:45,14:35,15:00,15:40,16:50,17:25,18:50	20:10,21:15																						  					 							Tarifa: $ 4.50							Telf.: 05-2-934-2 | 2-140-078 |",
+
+"RUTAS PORTOVEJENSES											Mañana	Tarde	Noche							 	7:45:, 10:05	14:05:, 16:15																			  					 		  Tarifa: $ 4								Telf.: 05-2-932-2 | 2-140-799|",
+
+
+"REINA DEL CAMINO											Mañana	Tarde	Noche							 1:30, 4:15, 6:15, 6:55, 8:30, 9:30, 10:15, 11:00	12:20, 13:10, 14:20, 15:05, 16:00, 17:00, 17:30	18:20, 19:15, 20:30, 21:30, 22:30																			  					 							Tarifa: $ 5								Telf.: 05-269-640 | 2-140-757 |");
+
+
+
+text_array[32] = new Array("",
+"EJECUTIVO EXPRESS O 17 SEPTIEMBRE								Mañana	Tarde	Noche  									5:00,5:10,5:20,5:30,5:40,5:50,6:00,6:10,6:20,6:30,6:40,7:50,8:00,8:10,16:10,16:20,16:30,16:40,19:00,20:20,20:30,20:40,20:50,21:00,21:10,21:20,21:30,21:40,21:50,:40,22:50,23:00,23:10,23:20,23:30					     				  		Tarifa: $ 1.45					  			Telf.: 2-972-035 | 2-140-568 |",
+
+
+"MARCELINO MARIDUEÑA											Mañana	Tarde	Noche							 5:00,5:15,5:30,5:45,6:00,6:15,6:30,6:45,7:00,7:15,7:30,7:45,8:00,8:15,9:45,10:00,10:15,2:30,12:45,13:00,13:15,13:30,13:45,14:00,14:15,14:30,14:45,15:00,15:15,15:30,16:45,17:00,17:15,17:30,17:45,18:00,18:10 																				  					 		Tarifa: $ 1.15					   		 Telf.: 2-729-697 | 2-140-609 |",
+
+
+"RUTAS MILAGREÑAS										Mañana	Tarde	Noche							 5:20, 5:30, 5:40, 5:50, 6:00, , 6:30, 8:00, 9:00, 9:30, 10:00, 10:30, 11:00, 11:30, 12:30, 13:00, 13:30, 14:00, 15:00, 16:00, 16:30, 17:00, 17:30, 21:40, 21:50, 22:00, 22:10, 22:20, 22:30, 22:40, 22:50, 23:00, 23:10, 23:20, 23:30																		  					 							Tarifa: $ 1.25					     	Telf.: 2-711-179 | 2-140-568 |");
+
+
+text_array[33] = new Array("",
+"FLOR DE LOS RÍOS												 Mañana  	Tarde										 		6:05, 8:05, 9:05, 11:05, 12:05						     				  		 					 							Tarifa: $ 3.25				 	   	      Telf.: 05-2-947-2 |  09-9588567",
+
+
+"VALENCIA													Mañana		Noche							 	 			11:50		18:00																			  					 							Tarifa: $ 3						     	 Telf.: 05-2-750-1 | 2-140-893 |");
+
+
+text_array[34] = new Array("",
+"S.A.N. SERVICIOS ASOCIADOS NAR								Mañana	  Tarde	  Noche							 	 5:00, 5:30, 5:45, 6:00, 6:30, 6:45, 7:00, 7:45, 8:00,  8:45, 9:00, 9:15 9:45, 10:00, 10:15, 11:00, 11:15, 11:30, 11:45, 12:00, 12:15, 12:30, 12:45, 13:00, 13:45, 14:15, 15:00, , 16:00, 17:00, 17:15, 17:30, 18:45, 19:00, 19:15, 19:30, 19:45, 20:00, 20:15, 20:30, 20:45, 21:20, 22:50																			  					 		Tarifa: $ 2.58							Telf.: 04-2-750-4 | 2-140-972");
+
+text_array[35] = new Array("",
+"LIBERTAD PENINSULAR C.L.P.										Mañana	 			   Tarde	  						 	 5:00,6:00,7:00	      13:00,15:00,16:30																		  					 		Tarifa: $ 4.50								Telf.: 2-783-002 | 2-140-975 |");
+
+text_array[36] = new Array("",
+"F.I.F.A.													Mañana	   Tarde	  Noche  						 	5:40,7:20,8:00,10:00,11:00	  12:00,13:00,14:00,16:40,17:40,18:20																	  					 		Tarifa: $ 1.65								Telf.: 2-140-220 | 052-790-05 |");
+
+text_array[37] = new Array("",
+"ECUATORIANO PULLMAN												 Tarde	  Noche									 		14:15,15:35,        18:35					     				  		 					 							   							Tarifa: $ 2.75				 	   	      	Telf.: 07-2-931-1 | 2-140-617 |",
+
+"RUTAS ORENSES													    Tarde	  Noche							 	 			13:05,  16:05	18:05																			  					 		Tarifa: $ 3						     	 Telf.: 07-2-937-6 | 2-140-65 |");
+
+
+text_array[38] = new Array("",
+"COACTUR															Mañana	     Tarde 											 				7:10,10:00	12:30, 3:10,5:15,6:25,					     				  								   	 						Tarifa: $ 9					  			Telf.: 05-2-934-2 | 2-140-078 |",
+
+"ZARACAY													 		Mañana		Noche							    	5:50	   	 	 21:00																				  					 		Tarifa: $ 9				   				 Telf.: 2-729-697 | 2-140-609 |");
+
+
+text_array[39] = new Array("",
+"SUCRE														Mañana	   Tarde	  Noche  						 	  			6:10	  13:10	    18:10																	  					 		Tarifa: $ 6.20							Telf.: 05-2-750-6 | 2-140-672 |");
+
+
+text_array[40] = new Array("",
+"VILLAMIL C.T.V.														Mañana	   Tarde	  Noche  						4:10, 4:40, 4:50, 5:00, 5:20, 5:40, 5:50, 6:00, 6:20, 6:40, 6:50, 7:00, 7:20, 7:50, 8:00,  8:40,  9:00, 9:50, 10:00, 10:10, 10:20, 10:30, 10:40, 10:50, 12:00, 12:20,  13:00,  13:50, 14:00,  14:40, 14:50, 15:00, 15:10, 15:20, 15:30, 15:40, 15:50, 16:00,  16:30, 17:30, 17:40, 17:5	18:00, 18:40, 18:50, 19:00, 19:10, 19:30, 19:40,  20:00, 20:30, 20:45, 21:00, 21:15																  					 		Tarifa: $ 2.48						  		Telf.: 2-760-942 | 2-140-789 |");
+
+
+text_array[41] = new Array("",
+"COACTUR															Mañana	   Tarde	  Noche 											 0:15,3:55,8:05,9:00,9:35,10:30,11:35	13:10,14:00,15:25,16:55,18:05,18:40	20:45,22:15			     				  							Tarifa: $ 4.50					  			Telf.: 05-2-934-2 | 2-140-078",
+
+"RUTAS PORTOVEJENSES												Mañana	   Tarde	  Noche 											3:30, 4:40, 5:10, 6:05, 6:45, 7:25, 8:25, 9:10, 10:25, 10:55, 11:30	12:10, 13:00, 13:55, 14:45, 15:10, 15:55, 16:25, 17:05, 17:50	18:35, 19:25, 20:25, 21:25				     				  								   	 						Tarifa: $ 4					  			Telf.: 05-2-932-2 | 2-140-799",
+
+"REINA DEL CAMINO													Mañana	   Tarde	  Noche 						5:25, 7:30, 9:45	13:50; 15:35	16:05, 18:10, 20:00																	  					 		Tarifa: $ 4				   				 Telf.:  05-269-581 | 2140011");
+
+
+text_array[42] = new Array("",
+"POSORJA C.T.P.														Mañana	   Tarde	  Noche  						4:45, 4:55, 5:05, 5:15, 5:25, 6:05, 6:15,  6:55, 7:05, 7:15, 7:25, 7:35, 7:45, 7:55, 8:05, 8:15, 8:25, 8:35, 8:45, 8:55, 9:05, 9:15, 10:15, 10:25, 10:35, 10:45, 10:55, 11:05, 11:15, 11:25, 12:45, 12:55, 13:05, 13:15, 13:45, 13:55, 14:15, 14:25, 15:35, 15:55, 16:05, 16:55, 17:05, 17:25, 17:35, 17:45, 17:55	18:05, 18:45, 18:55, 19:05, 19:25, 19:45, 19:52, 20:07, 20:22, 20:37															  					 		Tarifa: $  $ 2.80						  Telf.: 2-760-900 | 2-140-284 |");
+
+
+text_array[43] = new Array("",
+"TOURIS SAN FRANCISCO ORIENTAL										Mañana	   Tarde	  Noche  							 			6:00	    	  12:40	       20:00															  					 				Tarifa: $ 9						  Telf.: 2-760-900 | 2-140-284 |");
+
+
+text_array[44] = new Array("",
+"LA MANÁ															 Tarde	  										 17:45			     				  																		          					 Tarifa: $ 7.25					  			  Telf.: 03-2-688-1 | 2-140-405",
+
+"VALENCIA													Mañana	   Tarde	  Noche 											3:15, 4:00, 4:30, 5:00, 5:20, 5:40, 6:00, 6:2, 6:40, 7:00, 7:50, 8:10, 8:30, 8:50, 9:20, 9:40, 10:00, 10:20, 10:40, 11:00, 11:30, 12:00,  12:30, 12:50, 13:15, 14:00, 14:30, 15:00, 15:30, 16:00, 16:30, 17:00, 17:30	18:15, 18:45, 19:00, 19:15, 19:45			     				  								   	 							Tarifa: $ 5.50				  				 Telf.: 05-2-750-1 | 2-140-893 ",
+
+"T.I.A. S.A.												Mañana	   Tarde	  Noche 											7:30, 4:30, 5:00, 5:30, 6:00, 6:30, 7:00, 8:00, 8:30, 9:00, 9:30, 10:00, 10:30, 11:00, 11:30	12:00, 12:30, 13:00, 13:30, 14:00, 14:30, 15:00, 15:30, 16:00, 16:30, 17:00, 17:30	00:18			     				  							Tarifa: $ 4.50					  			    Telf.: 052-75-05- | 2-140-597",
+
+
+"SUCRE														Mañana	   Tarde	  Noche 						2:00, 2:45, 3:15, 3:30, 4:00, 4:45, 5:45, 6:15, 6:45, 7:15, 7:45, 8:15, 8:45, 9:15 ,9:45, 10:15, 11:15, 11:45, 12:45, 13:15, 13:45, 14:45, 15:15,  16:15, 16:45, 17:15, 17:45	18:15, 18:45, 19:15, 19:45, 20:15																  					 		Tarifa: $ 6			   						 Telf.:  05-2-750-6 | 2-140-672");
+
+
+text_array[45] = new Array("",
+"KENNEDY															Mañana	     Tarde 											 			8:50			13:45					     				  								   	 							Tarifa: $ 7					  				Telf.: 022-763-11 | 072-041-82 |",
+
+"OCCIDENTALES													 		Mañana		Tarde							    	0:00,1:00,9:20	    12:20,14:20,15:20,17:20																				  					 		Tarifa: $ 8				   					 Telf.: 07-2-50273 | 2-140-618 |");
+
+
+
+text_array[46] = new Array("",
+"FLOTA IMBABURA												Mañana	   Tarde	  Noche  								 0:00,0:30,4:00,7:00,8:20,10:00,11:00, 12:15,13:45,15:00,18:45	20:00,21:00,21:40,22:10,22:50,23:15,23:40			    				  	  	Tarifa: $ 8.25					  			  Telf.: 06-2-955-7 | 2-140-649 |",
+
+
+"PANAMERICANA INTERNACIONAL										Mañana	   Tarde	  Noche 											0:45,1:00,6:00,9:00,9:40	12:00,13:00,15:20,17:00,18:30	20:30,21:15,21:50,22:40,23:30		     				  							Tarifa: $ 10				  				 Telf.: 02-2-296-1 | 2-140-638 |",
+
+"ZARACAY													Mañana	   Tarde	  Noche 											 7:00, 8:00, 9:00,  10:00, 	12:00, 12:30, 13:00,  15:00, 15:30, 16:00, 16:30, 17:00, 17:30	20:18			     				  		Tarifa: $ 8.15					  			 Telf.: 02-2-752-5 | 2-140-089 |",
+
+"TRANSPORTES ECUADOR											Mañana	   Tarde	  Noche 											0:15, 1:00, 5:30, 6:30, 7:05, 8:00, 9:20, 10:15, 11:15	12:30, 13:20, 14:00, 14:30, 15:40, 16:40	18:00, 18:35, 19:30, 20:45, 21:30, 22:00, 22:30, 23:00, 23:20, 23:50		     				  							   							Tarifa: $ 8.50					  			Telf.: 02-2-225-3 | 2-140-076 |",
+
+"SANTA	 (VÍA PALLATANGA)										Mañana	   Tarde	  Noche 											 		8:00, 11:00,		20:00		     				  													 							Tarifa: $ 8.15					  		   Telf.: 03-2-521-0 | 2-140-507 |",
+
+"SAN CRISTOBAL														Mañana	   Tarde	  Noche 						4:30, 8:40, 9:30, 10:40, 11:30	13:15; 15:30	19:00, 20:15, 21:00, 22:20																  					 		Tarifa: $ 8.35		   					Telf.:  06-2-980-7 | 2-140-734 |");
+
+text_array[47] = new Array("",
+"ECUADOR EJECUTIVO														Mañana	     Tarde 											 			11:15, 				4:30					     				  								   	 							Tarifa: $ 4.50				  			Telf.: 03- 2-962- | 2-141-830 |",
+
+"RIOBAMBA													 		Mañana	   Tarde	  Noche 						    	9:00;       2:00	    15:00																			  					 		Tarifa: $ 4.50			   					 Telf.: 03-2-944-5 | 2-140-753 |");
+
+
+text_array[48] = new Array("",
+"LIBERPESA S.A.														Mañana	   Tarde	  Noche 											3:30,4:15,5:00,5:30,6:00,6:30,7:00,7:30,8:00,8:45,9:30,10:15,11:00,11:45,12:20,12:50,13:30,14:15,15:00,15:45,16:30,17:10,17:45,18:15,18:50	19:30,20:15,21:00,21:45,22:30  								   	 							 							Tarifa: $ 3.45				  			Telf.: 06-2-773-0 | 2-140-975 |",
+
+
+"COSTA AZUL C.I.C.A.													Mañana	   Tarde	  Noche 											3:30,4:00,4:30,5:00,5:30,5:45,6:00,6:15,6:30,6:45,7:00,7:45,8:00,8:30,9:00,9:30,10:00,10:30,1:00,11:30,12:00,12:15,12:30,12:45,13:00,14:00,14:30,15:00,15:30,16:00,16:30,17:00,17:15,17:30,17:45,18:00,18:30,18:45, 19:00,19:30,20:00,20:30,21:00,21:30,22:00 								   	 							 								 								Tarifa: $ 3.45				  			  Telf.: 2-786-503 | 2-140-975 |",
+
+
+"LIBERTAD PENINSULAR C.L.P.											Mañana	   Tarde	  Noche 						3:10,3:40,4:10,4:40,5:05,5:20,5:35,5:50,6:05,6:20,6:35,6:50,7:05,7:20,7:35,7:50,8:10,8:40,9:10,9:40,10:10,10:40,11:10,11:40,12:05,12:20,12:35,12:50,13:10,13:40,14:10,14:40,15:10,15:40,16:10,16:40,17:05,17:20,17:35,17:50,18:05,18:20,18:35,18:50, 19:10,19:40,20:10,20:40,21:10,21:40,22:10																		  					 		Tarifa: $ 3.80			   					 Telf.: 2-783-002 | 2-140-975 |");
+
+
+text_array[49] = new Array("",
+"SALITRE															Mañana	   Tarde	  											5:35, 6:35, 7:35, 8:35, 9:35, 10:35, 11:35	12:35, 13:35, 14:35, 15:35, 16:35	17:35								   	 						Tarifa: $ 1.35				  				Telf.: 2-792-011 | 2-140-754 |",
+
+
+"RUTAS VINCEÑAS														Mañana	   Tarde	  Noche 						5:30, 6:00, 6:30, 7:00, 7:30, 8:00, 8:30, 9:00, 9:30, 10:00, 10:30, 11:00, 11:30	12:00, 12:30, 13:00, 13:30, 14:00, 14:30, 15:00, 15:30, 16:00, 16:30, 17:00, 17:30	18:00, 18:30, 19:00, 19:30, 20:00																	  					 		Tarifa: $ 1.50			   					 Telf.: 05-2-791-1 | 2-140-195 |");
+
+
+text_array[50] = new Array("",
+"SANTA ANA C.I.S.A.														Mañana	   Tarde	  Noche 						5:40, 5:47, 6:15, 6:22, 6:29, 6:36, 6:50, 6:57, 7:18, 7:25, 7:32, 7:53, 8:00, 8:21, 8:28, 8:35, 8:42, 8:56, 9:03, 9:10, 9:17, 9:24, 9:31, 9:38, 9:45, 9:52, 9:59, 10:06, 10:13, 10:20, 10:27, 10:34, 10:55, 11:02, 11:09, 11:16, 11:23, 11:30, 11:37, 11:44, 11:51, 2:40, 12:47, 12:54. 13:01, 13:08, 13:15, 13:22, 13:29, 13:36, 13:57, 14:18, 14:25, 14:32, 14:39, 14:46, 14:53, 15:00, 15:07, 15:14, 15:21, 15:28, 15:35, 15:42, 15:49, 15:56, 16:03, 18:16, 18:23, 18:30, 18:37, 18:44, 18:51, 18:58, 19:05, 19:12, 19:19, 19:26, 19:33, 19:40, 19:47, 19:54, 20:01, 20:08, 20:15, 20:22, 20:29, 20:36, 20:43, 20:50, 20:57, 21:04, 21:11, 21:18, 21:25, 22:00, 23:00																	  					 						 							Tarifa: $ 2.38			   				Telf.: 04-2-024-4 | 2-140--687|");
+
+
+text_array[51] = new Array("",
+"AEROTAXI																Mañana	  	  Noche 											 	0:20 		21:05,22:30								   	 							 										 								Tarifa: $ 11				  			Telf.: 02-2-958-9 | 2-140-067 |",
+
+
+"OCCIDENTALES													  		 Tarde	 										 			   18:30									   	 							 								 								Tarifa: $ 11				  			  Telf.: 07-2-50273 | 2-140-618 |",
+
+
+"TRANS ESMERALDAS TEISA S.A.											Mañana	   Tarde	  Noche 						   			8:00	            17:30    	20:30																	  					 			Tarifa: $ 11			   				 Telf.: 04-2-279-5 | 2-140-642|");
+
+
+text_array[52] = new Array("",
+"RÍO PAUTE																Mañana	  	  Tarde											 	5:45	 		13:00							   	 							 										 								Tarifa: $ 3.50				  			Telf.: 02-2-958-9 | 2-140-067 |",
+
+"REINA DEL CAMINO														Mañana	   	  Noche 						   			5:00;    	        6:50	23:30																	  					 			Tarifa: $ 4			   					 Telf.: 05-269-640 | 2-140-757|");
+
+
+
+text_array[53] = new Array("",
+"C.I.F.A.																Mañana	  	  Tarde											 	13:15	 		17:45							   	 							 										 								Tarifa: $ 4.80				  			Telf.: 07-2-933-7 | 2-140-379 |",
+
+
+"RUTAS ORENSES															Tarde	   	   						   			17:15, 15:05																	  					 								Tarifa: $ 4.60			   			 	Telf.: 07-2-937-6 | 2-140-657|");
+
+
+
+text_array[54] = new Array("",
+"KENNEDY															Mañana	   													 			6:50,7:50,10:50								   	 							 								  								Tarifa: $ 5.50				  			Telf.: 022-763-11 | 072-041-82|",
+
+
+"LA MANÁ															Mañana	   Tarde	  Noche 											4:15,4:45,5:10,5:30,5:50,6:10,6:30,6:50,7:20,8:00,8:20,8:40,9:10,9:30,9:50,10:10,10:30,10:50,11:10,11:40	12:20,12:40,13:00,13:45,14:15,14:45,15:15,15:45,16:15,16:45,17:15,18:30	19:30,20:00							   	 							 								 									 	    							Tarifa: $ 5.80				  			  Telf.: 03-2-688-1 | 2-140-405 |",
+
+
+"ZARACAY															Mañana	   Tarde	  Noche 											3:15, 3:40, 4:30, 5:00, 5:30, 6:10, 6:25, 6:50, 7:10, 7:30, 7:55, 8:10, 8:30, 8:45, 9:05, 9:30, 9:50, 10:10,10:25, 10:40, 10:55, 11:10, 11:45, 11:55	12:10, 13:20, 13:45, 14:15, 14:30, 14:50, 15:10, 15:30, 15:45, 16:10, 16:30, 16:50, 17:10, 17:40	18:10, 18:45, 19:30, 20:15, 21:45, 22:00							   	 							 								 										   	 								Tarifa: $ 5.50				  			  Telf.: 02-2-752-5 | 2-140-089 |",
+
+
+"SUCRE															Mañana	   Tarde	  Noche 						4:15, 6:10, 8:05, 10:10	12:10, 14:05, 15:05, 17:10	18:10, 19:10, 20:20																		  					 			Tarifa: $ 5.50			   				 Telf.: 05-2-750-6 | 2-140-672 |");
+
+
+text_array[55] = new Array("",
+"BAÑOS																Tarde											 	13:35	 									   	 							 										 								Tarifa: $ 15				  			Telf.: 07-2-570-5 |",
+
+"LOJA																Noche	   	   						   			      19:00																	  					 									 								Tarifa: $ 15			   			 	Telf.: 07-2-571-8 | 2-140-311|");
+
+
+text_array[56] = new Array("",
+"BAÑOS																Tarde											 	16:45	 									   	 							 										 								Tarifa: $ 10				  			Telf.: 2-520-964 |  03-2-520-9|",
+
+"FLOTA PELILEO																Noche	   	   						   			      22:00																	  					 							    Tarifa: $ 11			   			    Telf.: 03-2-849-5  | 2-140-189 |");
+
+
+text_array[57] = new Array("",
+"REINA DEL CAMINO												   Mañana	   	   						   			      10:35																	  					 							    							Tarifa: $ 12.80			   			    Telf.: 05-269-640 | 2-140-757  |");
+
+
+text_array[58] = new Array("",
+"SAN CRISTOBAL												    Mañana	   Tarde	  Noche   	   						   			    7:20; 	16:20	18:30:, 23:20 0:20																  					 		       Tarifa: $ 1.30			   			 Telf.: 06-2-980-7 | 2-140-734 |");
+
+
+text_array[59] = new Array("",
+"VENTANAS													    Mañana	   Tarde	  Noche   	   						4:00, 4:10, 4:20, 4:30, 4:40, 4:50, 5:00, 5:1, 5:20, 5:30, 5:40, 5:50, 6:00, 6:10, 6:2, 6:30, 6:40, 6:50, 7:00, 7:20,7:40, 7:50,  8:40, 8:50, 9:00, 9:10, 9:20, 9:30, 9:40, 9:50, 10:00, 10:30, 10:40, 11:30, 11:40, 11:50	12:00, 12:10, 12:20, 12:30, 12:40, 12:50, 13:00, 13:10, 13:40, 13:50, 14:00, 14:10, 14:20, 14:30, 14:40, 14:50, 15:00, 15:10, 15:20, 15:30, 15:40, 15:50, 16:00, 16:30, 16:40, 16:50, 17:00, 17:10,  17:50	18:00, 18:10, 18:20, 18:30, 18:40, 18:50, 19:00, 19:10, 19:20, 19:30, 19:40, 19:50 , 20:00						  							 Tarifa: $ 2.70			   			       Telf.: 05-2-791-1 | 2-140-195 |");
+
+
+text_array[60] = new Array("",
+"RUTAS VINCEÑAS													    Mañana	   Tarde	  Noche   	   						6:15, 7:15, 8:15, 9:15, 10:15, 11:15	12:15, 13:15, 14:15, 15:15, 16:15, 16:45, 17:15, 17:45	18:15, 18:45, 19:15, 19:45, 20:15, 20:45, 21:30, 23:15					  									         					Tarifa: $ 1.46			   			       Telf.: 05-2-791-1 | 2-140-195 |");
+
+
+text_array[61] = new Array("",
+"F.I.F.A.																Mañana	   Tarde	  Noche  										5:00,5:20,6:00,6:20,6:40,7:00,7:40,8:00,8:20,8:40,9:00,9:20,9:40,10:00,10:20,10:40,11:00,11:20,11:40,12:00,12:20,12:40,13:00,13:20,13:40,14:00,14:20,14:40,15:00,15:20,15:40,16:00,16:20,16:40,17:00,17:20,18:00,18:40	19:00,19:20,19:40,20:00,20:20,20:40				 																  							Tarifa: $ 0.80				  			Telf.: 05-2-792-4 | 2-140-220|",
+
+"SALITRE																Mañana	   Tarde	  										 	6:50, 8:50, 10:50	  12:50, 14:50, 16:50 									   	 							 									Tarifa: $ 1				  		Telf.: 2-792-011 | 2-140-754|",
+
+
+
+"RUTAS VINCEÑAS																Noche	   	   						5:10. 5:30, 5:50, 6:10, 6:30, 6:50, 7:10, 7:30, 7:50, 8:10, 8:30, 8:50, 9:10, 9:30, 9:50. 10:10, 10:30, 10:50, 11:10, 11:30, 11:50, 5:45, 6:45, 7:45, 8:45, 9:45, 10:45, 11:45	16:10, 16:30, 16:50, 17:10, 17:30, 17:50, 12:10, 12:30, 12:50, 13:10, 13:30, 13:50, 14:10, 14:30, 14:50, 15:10, 15:30, 15:50, 12:45, 13:45, 15:45, 16:45	18:10, 18:30, 18:50, 19:10, 19:30, 19:50, 20:10, 20:30, 20:50																  					 			Tarifa: $ 0.78			   			    Telf.: 05-2-791-1 | 2-140-195 |");
+
+
+text_array[62] = new Array("",
+"LOJA															    Mañana	     	   						   6:15,  8:15, 				  									         				 				 								Tarifa: $ 9			   			       Telf.: 07-2-571-8 | 2-140-311 |");
+
+
+text_array[63] = new Array("",
+"CIUDAD DE PIÑAS												Mañana	   Tarde	  Noche										 7:05	          12:05,15:00,  18:50	 									   	 							 								Tarifa: $ 6				  		    Telf.: 07-2-976-4 | 2-140-531|",
+
+"T.A.C.															Mañana	   Tarde	  Noche	   	   						   		10:30:, 5:30	16:00:, 12:35	18:00																  					 			 Tarifa: $ 5			   			    Telf.: 07-2-972-8 | 2-140-236 |");
+
+
+
+
+function switch_select()
+
+{ 
+for (loop = window.document.form_1.select_2.options.length-1; loop > 0; loop--)
+  {
+    window.document.form_1.select_2.options[loop] = null;}
+  
+  for (loop = 0; loop < option_array[window.document.form_1.select_1.selectedIndex].length; loop++)
+  {
+    window.document.form_1.select_2.options[loop] = new Option(option_array[window.document.form_1.select_1.selectedIndex][loop]);}
+  
+  window.document.form_1.select_2.selectedIndex = 0;}
+  
+  
+function switch_text()
+
+{ window.document.form_1.textarea_1.value = text_array[window.document.form_1.select_1.selectedIndex][window.document.form_1.select_2.selectedIndex]; }
+
+function box()
+
+{
+  if (window.document.form_1.select_2.selectedIndex == 0)
+  {
+    alert("Where do you think you're going?");
+  } else {
+    if (open_in_newwindow==1)
+    window.open(url_array[window.document.form_1.select_1.selectedIndex][window.document.form_1.select_2.selectedIndex],"_blank");
+    else
+    window.location=url_array[window.document.form_1.select_1.selectedIndex][window.document.form_1.select_2.selectedIndex]
+  }
+}
+
+function set_orig()
+
+{
+  window.document.form_1.select_1.selectedIndex = 0;
+  window.document.form_1.select_2.selectedIndex = 0;
+}
+
+window.onload=set_orig
+
+// -->
+</script>
+    <form name="form_1" onSubmit="return false;">
+      <select name="select_1" onChange="switch_select(); switch_text();" data-native-menu="false">
+        <option>CIUDADES</option>
+        <option>ALAUSÍ</option>
+        <option>AMBATO</option>
+        <option>ATACAMES-MUISNE</option>
+        <option>BABAHOYO</option>
+        <option>BAHIA</option>
+        <option>BALZAR</option>
+        <option>CALCETA</option>
+        <option>CALUMA</option>
+        <option>CHONE</option>
+        <option>COCA</option>
+        <option>CUENCA</option>
+        <option>DAULE</option>
+        <option>EL EMPALME</option>
+        <option>EL PANGUI</option>
+        <option>ESMERALDAS</option>
+        <option>FRANCISCO DE ORELLANA</option>
+        <option>GOLONDRINAS</option>
+        <option>GUARANDA</option>
+        <option>HUAQUILLAS</option>
+        <option>JIPIJAPA</option>
+        <option>JUNQUILLAL</option>
+        <option>LA TRONCAL</option>
+        <option>LA VICTORIA</option>
+        <option>LAGO AGRIO</option>
+        <option>LATACUNGA</option>
+        <option>LIMONAL</option>
+        <option>LOJA</option>
+        <option>MACARÁ</option>
+        <option>MACAS</option>
+        <option>MACHALA</option>
+        <option>MANTA</option>
+        <option>MILAGRO</option>
+        <option>MOCACHE</option>
+        <option>NARANJAL</option>
+        <option>OLÓN</option>
+        <option>PALENQUE</option>
+        <option>PASAJE</option>
+        <option>PEDERNALES</option>
+        <option>PICHINCHA</option>
+        <option>PLAYAS</option>
+        <option>PORTOVIEJO</option>
+        <option>POSORJA</option>
+        <option>PUYO</option>
+        <option>QUEVEDO</option>
+        <option>QUININDÉ</option>
+        <option>QUITO</option>
+        <option>RIOBAMBA</option>
+        <option>SALINAS</option>
+        <option>SALITRE</option>
+        <option>SAMBORONDÓN</option>
+        <option>SAN LORENZO</option>
+        <option>SAN VICENTE</option>
+        <option>SANTA ROSA</option>
+        <option>SANTO DOMINGO</option>
+        <option>SHUSHUFINDI</option>
+        <option>TENA</option>
+        <option>TOSAGUA</option>
+        <option>TULCÁN</option>
+        <option>VENTANAS</option>
+        <option>VERNAZA</option>
+        <option>VINCES</option>
+        <option>ZAPOTILLO</option>
+        <option>ZARUMA</option>
+      </select>
+      <br>
+      <br>
+      <select name="select_2" onChange="switch_text();" data-native-menu="false">
+        <option>COOPERATIVAS</option>
+        <option> </option>
+      </select>
+      <br>
+      <br>
+      <textarea name="textarea_1" rows="10" cols="60" style="height:200px; overflow:auto;">
+
+  
+  </textarea>
+      <br />
+      <!-- This should be the same as the general instructions in the above code. -->
+    </form>
+  </div>
+  <div data-role="controlgroup" data-type="horizontal"data-mini="true">
+    <div align="right"> <a href="#reservapas" data-role="button" data-theme="a" data-icon="grid">Reservar</a> <a href="#comprapas" data-role="button" data-theme="a" data-icon="plus">Comprar</a> </div>
+  </div>
+</div>
+</div>
+<div data-role="page" data-theme="a" data-position="fixed" id="reservapas">
+  <div data-role="header" data-position="fixed">
+    <h1>RES. PASAJES </h1>
+  </div>
+  <div data-role="content">
+    <p>
+    <h3>
+      <center>
+        Reservación de Pasajes
+      </center>
+    </h3>
+    </p>
+    <div class="ui-grid-a">
+      <div class="ui-block-a">
+        <p class="marco2"> N# ASIENTO</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco2"> N# ASIENTO</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 1-2</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 3-4 </p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 5-6</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7-8 </p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 9-10</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 11-12 </p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 13-14</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 15-16</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 17-18</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 19-20</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 21-22</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 23-24</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 25-26</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 27-28</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 29-30</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 31-32</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 33-34</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 35-36</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 37-38</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 39-40</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 41-42</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 43-44</p>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h1> jorgeluix.wordpress.com </h1>
+  </div>
+</div>
+<div data-role="page" data-theme="a" data-position="fixed" id="comprapas">
+  <div data-role="header" data-position="fixed">
+    <h1>RES. PASAJES </h1>
+  </div>
+  <div data-role="content">
+    <p>
+    <h3>
+      <center>
+        Reservación de Pasajes
+      </center>
+    </h3>
+    </p>
+    <div class="ui-grid-b">
+      <div class="ui-block-a">
+        <p class="marco2"> Horarios</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco2"> Horarios</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco2"> Horarios</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 6:45 - 7:00</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7:15 - 7:30</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 7:45 - 8:00</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 8:15 - 8:30</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 8:45 - 9:00</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 9:15 - 9:30</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 6:45 - 7:00</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7:15 - 7:30</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 7:45 - 8:00</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 6:45 - 7:00</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7:15 - 7:30</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 7:45 - 8:00</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 6:45 - 7:00</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7:15 - 7:30</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 7:45 - 8:00</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 6:45 - 7:00</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7:15 - 7:30</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 7:45 - 8:00</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 6:45 - 7:00</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7:15 - 7:30</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 7:45 - 8:00</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 6:45 - 7:00</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7:15 - 7:30</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 7:45 - 8:00</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 6:45 - 7:00</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7:15 - 7:30</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 7:45 - 8:00</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 6:45 - 7:00</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7:15 - 7:30</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 7:45 - 8:00</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="marco"> 6:45 - 7:00</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="marco"> 7:15 - 7:30</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="marco"> 7:45 - 8:00</p>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h1> jorgeluix.wordpress.com </h1>
+  </div>
+</div>
+
+									<!-- COSTA ----->
+
+<div data-role="page" id="costa" data-add-back-btn="true">
+<div data-role="header" data-position="fixed" data-theme="a">
+  <h2 align="center"> COSTA </h2>
+</div>
+<div data-role="content">
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    
+<p class="costa-text">  Este territorio está formado por llanuras fértiles, colinas, cuencas sedimentarias y elevaciones de poca altitud. Se destacan las provincias de Esmeraldas, Manabí y Guayas. Se encuentra la red fluvial más extensa del país.  </p>
+        <div class="slider-wrapper theme-default">
+        
+            <div id="slider" class="nivoSlider">
+                <img src="images/costa1.jpg"  alt="" title="Ecuador tiene 640 kilómetros de costa."/>
+          		<img src="images/costa2.jpg"  alt="" title="Manabí - Playa Los Frailes." />
+               <img src="images/costa3.jpg"  alt="" title="Esmeraldas - Atacames." data-transition="slideInLeft" />
+                <img src="images/costa4.jpg"   alt="" title="Santa Elena - Salinas" />
+          </div>
+            
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a  caption with a link
+            </div>
+    </div>
+    <p class="costa-text">   La llamada Costa Azul ecuatoriana ofrece hermosos balnearios con extraordinarias playas, límpidas arenas y brillante sol, que permiten al turista gozar de un clima agradable, de deportes acuáticos y de toda clase de entretenimientos. </p>
+</div>
+
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h1> jorgeluix.wordpress.com </h1>
+  </div>
+</div>
+
+
+
+
+											<!-- BUSQUEDA ----->
+
+<div data-role="page" data-theme="a" id="busqueda">
+<div data-role="header" data-position="fixed" data-theme="a">
+  <div class="ui-grid-d">
+    <div class="ui-block-a"> <span class="ui-text">GUIA TRANSPORTE</span></div>
+    <div class="ui-block-b"> </div>
+    <div style="text-align:center">
+      <div class="ui-block-c"> <a href="#home" data-transition="fade"> <img src="images/home.png"> </a></div>
+    </div>
+    <div style="text-align:right">
+      <div class="ui-block-d"> <a href="#busqueda" data-transition="fade"> <img src="images/buscaup.png"> </a></div>
+      <div class="ui-block-e"> <a href="#formulario1" data-transition="fade"> <img src="images/registrar.png"> </a></div>
+    </div>
+  </div>
+</div>
+
+<!-- cracion de columnas ----->
+
+<div data-role="content">
+  <br><h2 align="center"> Regiones </h2> <br>
+  <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar">
+    <li> <a href="#costa"> <img src="images/Costa.png">
+      <h3>Costa</h3>
+      <p>$2.00 a $6.00 </p>
+      </a> <a href="#costa">Mostrar</a>
+    <li> <a href="#sierra"> <img src="images/Sierra.png">
+      <h3>Sierra</h3>
+      <p>$8.00 a $12.00</p>
+      </a> <a href="#sierra">Mostrar</a>
+    <li> <a href="#oriente"> <img src="images/Oriente.png">
+      <h3>Oriente</h3>
+      <p> $10.00 a $16.00</p>
+      </a> <a href="#oriente">Mostrar</a>
+  </ul>
+  </li>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h1> jorgeluix.wordpress.com </h1>
+  </div>
+</div>
+
+
+
+
+
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="query.js"></script> 
+<script type="text/javascript" charset="utf-8" src="storage.js"></script>
+</body>
+</html>
